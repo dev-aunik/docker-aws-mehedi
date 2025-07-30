@@ -1,0 +1,8 @@
+services:
+  apache:
+    build: .
+    container_name: docker-aws-mehedi
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/var/www/html
